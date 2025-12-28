@@ -2,13 +2,23 @@
 
 A full-stack AI-based Fake Currency Detection Web Application that detects whether an uploaded Indian currency note is Real or Fake, along with its Denomination, using Deep Learning (CNN) and Flask.
 
+
+
 🚀 Project Highlights
+
+
 ✅ Detects whether uploaded image is a currency note or not
+
 ✅ Identifies Indian currency denomination (₹10, ₹20, ₹50, ₹100, ₹200, ₹500)
+
 ✅ Classifies note as Real or Fake
+
 ✅ Displays confidence score
+
 ✅ Simple & clean Flask-based web UI
+
 ✅ Trained on custom dataset (7000+ images)
+
 
 
 👨‍💻 **Developed by:** Meet Shah
