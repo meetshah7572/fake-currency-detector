@@ -57,21 +57,18 @@ Each denomination contains real and fake currency note images collected from mul
 - Output: REAL / FAKE with confidence
 
 
+
 ## 📁 Project Structure
+
+project structure and dataset structure screenshot also provided in screenshot folder check it for better understanding
+
 fake-currency-detector/
-
 │
-
 ├── app/
-
 │ ├── app.py
-
 │ ├── static/
-
 │ │        └──style.css
-
 │ │        └── uploads/
-
 │ └── templates/
 │           └──index.html
 │
