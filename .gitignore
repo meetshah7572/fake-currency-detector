@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environment
+venv/
+.env/
+
+# VS Code
+.vscode/
+
+# Uploaded images
+app/static/uploads/
+
+# Dataset (Kaggle – not pushed)
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+models/*.keras

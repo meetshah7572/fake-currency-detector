@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake Currency Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>💵 Fake Currency Detection System</h1>
+        
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <br><br>
+            <button type="submit">Upload & Detect</button>
+        </form>
+
+        {% if image %}
+        <div class="image-preview">
+            <h3>Uploaded Image:</h3>
+            <img src="{{ url_for('static', filename='uploads/' ~ image) }}" alt="Uploaded Image">
+        </div>
+        {% endif %}
+
+        {% if note_type %}
+        <div class="note-info">
+            <h2>Denomination: {{ note_type }}</h2>
+        </div>
+        {% endif %}
+
+        {% if result %}
+        <div class="result-card 
+            {% if 'REAL' in result %}real{% elif 'FAKE' in result %}fake{% else %}uncertain{% endif %}">
+            <h2>{{ result }}</h2>
+            {% if confidence != 'N/A' %}
+            <h3>Confidence: {{ confidence }}</h3>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <footer>
+            <p>© 2025 Meet Shah | AI Fake Currency Detector</p>
+        </footer>
+    </div>
+</body>
+</html>
