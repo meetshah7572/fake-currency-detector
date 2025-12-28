@@ -1,6 +1,15 @@
-# 🪙 Fake Currency Detection System (India)
+# 🪙 💵 Fake Currency Detection System using Deep Learning
 
-A deep learning–based web application to detect **Indian currency notes**, identify their **denomination**, and classify them as **REAL or FAKE** using Computer Vision and CNN models.
+A full-stack AI-based Fake Currency Detection Web Application that detects whether an uploaded Indian currency note is Real or Fake, along with its Denomination, using Deep Learning (CNN) and Flask.
+
+🚀 Project Highlights
+✅ Detects whether uploaded image is a currency note or not
+✅ Identifies Indian currency denomination (₹10, ₹20, ₹50, ₹100, ₹200, ₹500)
+✅ Classifies note as Real or Fake
+✅ Displays confidence score
+✅ Simple & clean Flask-based web UI
+✅ Trained on custom dataset (7000+ images)
+
 
 👨‍💻 **Developed by:** Meet Shah
 
@@ -89,8 +98,8 @@ data/
 Due to GitHub file size limits, trained models are not included.
 
 Download models from:
-- denomination_model.keras → [Google Drive link]
-- fake_500.keras → [Google Drive link]
+- denomination_model.keras → [download link : https://drive.google.com/drive/folders/1lu_5ySHSlbASnGZoX6TkJ9kIrrh6EpL7?usp=sharing]
+- fake_500.keras → [download link : https://drive.google.com/drive/folders/1lu_5ySHSlbASnGZoX6TkJ9kIrrh6EpL7?usp=sharing]
 
 Place both files inside:
 models/
@@ -128,6 +137,35 @@ Performance depends on image quality, angle, and lighting
 Extremely blurred or cropped images may give uncertain results
 
 Designed for academic and demonstration purposes
+## 📸 Application Screenshots
+
+### 🏠 Home Page
+Upload interface for currency detection.
+
+![Home Page](screenshots/home.png)
+
+---
+
+### ✅ Real Currency Detection
+Correctly identifies real currency note with denomination and confidence.
+
+![Real Note](screenshots/real_note.png)
+
+---
+
+### ❌ Fake Currency Detection
+Detects fake note with confidence score.
+
+![Fake Note](screenshots/fake_note.png)
+
+---
+
+### 🚫 Non-Currency Image Detection
+Rejects random images that are not currency notes.
+
+![Not Currency](screenshots/not_currency.png)
+
+
 
 👨‍💻 Author
 

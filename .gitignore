@@ -1,23 +1,19 @@
-# Python
+# Virtual environment
+venv/
+
+# Dataset
+data/
+
+# Python cache
 __pycache__/
 *.pyc
-*.pyo
 
-# Virtual Environment
-venv/
-.env/
-
-# VS Code
+# IDE
 .vscode/
 
 # Uploaded images
 app/static/uploads/
 
-# Dataset (Kaggle – not pushed)
-data/
-
-# OS files
-.DS_Store
-Thumbs.db
-
+# Large models (GitHub limit)
 models/*.keras
+models/*.h5
